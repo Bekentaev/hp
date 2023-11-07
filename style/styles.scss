@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Romulc";
+    src: url("https://static.tildacdn.com/tild3336-6234-4233-b766-373937313632/Aquarelle.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Romulc";
+    src: url("https://static.tildacdn.com/tild3265-3331-4565-b162-353461633164/FontsFree-Net-saint-.woff")
+        format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Romulc";
+    src: url("https://static.tildacdn.com/tild3864-3161-4630-b734-393130386131/KZ_RomulC.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Romulc";
+    src: url("https://static.tildacdn.com/tild6333-3437-4464-b839-386239306664/KZPFChampionScriptPr.woff")
+        format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Romulc";
+    src: url("https://static.tildacdn.com/tild6165-3337-4239-b537-306163626536/BKANTKZ.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Romulc";
+    src: url("https://static.tildacdn.com/tild6463-6261-4932-a331-376663346366/Miama_Nueva_kz.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Romulc";
+    src: url("https://static.tildacdn.com/tild3331-3733-4131-b466-656663343736/KZ_ceremonious-three.woff")
+        format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Romulc";
+    src: url("https://static.tildacdn.com/tild6639-3239-4531-b363-613337383862/Asylbekm02shelleyKz.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    border: 1px solid black;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    .imgbg {
+        position: absolute;
+        background-image: url("img/img.png");
+        background-attachment: scroll;
+        width: 400px;
+        height: 400px;
+    }
+    .adress {
+        margin: 0 auto;
+    }
+}
+h1,
+h2 {
+    font-family: "Romulc";
+    color: #ff8562;
+    margin: 20xp 0;
+    line-height: 1.5;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    color: #ff8562;
+    margin: 20px 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+        list-style-type: none;
+        a {
+            font-size: 25px;
+            color: #ff8562;
+            text-decoration: none;
+        }
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+.main {
+    text-align: center;
+}
+.img {
+    top: 0;
+    opacity: 0.8;
+    width: 400px;
+    position: absolute;
+    right: 0;
+
+    z-index: -1;
+    height: 400px;
+}
+.left {
+    top: 0;
+    opacity: 0.8;
+    width: 400px;
+    position: absolute;
+    right: 0;
+
+    z-index: -1;
+    height: 400px;
+    left: -200px;
+    transform: rotate(0.4turn);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 50%;
+    }
+    .adress {
+        width: 390px;
+    }
+    .addd {
+        width: 30%;
+    }
+}
