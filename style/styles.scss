@@ -61,12 +61,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .wrapper {
     border: 1px solid black;
     position: relative;
-    max-width: 600px;
+    max-width: 100%;
+
     margin: 0 auto;
     .imgbg {
         position: absolute;
@@ -77,6 +79,7 @@ body {
     }
     .adress {
         margin: 0 auto;
+        overflow-y: hidden;
     }
 }
 h1,
@@ -117,10 +120,12 @@ p {
     opacity: 0.8;
     width: 400px;
     position: absolute;
-    right: 0;
+    right: -200px;
 
     z-index: -1;
     height: 400px;
+
+    z-index: -1;
 }
 .left {
     top: 0;
@@ -139,4 +144,10 @@ p {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+@media screen and (max-width: 390px) {
+    .wrapper {
+        width: 100%;
+    }
 }
