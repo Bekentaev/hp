@@ -112,7 +112,7 @@ p {
   margin-top: 80px;
 }
 .main section {
-  margin: 100px 0;
+  margin: 130px 0;
 }
 
 .footer {
@@ -160,7 +160,7 @@ p {
   transform: rotate(-0.25turn);
   z-index: -1;
   opacity: 0.4;
-  right: -125px;
+  right: -130px;
   overflow-y: hidden;
 }
 
@@ -204,6 +204,40 @@ p {
   }
   .section__main .logo .logo__years .img__logo {
     max-width: 100%; /* Сделайте изображение адаптивным по ширине */
+  }
+}
+.fade-in {
+  opacity: 0; /* начальное значение непрозрачности */
+  animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+  animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+  animation-duration: 2s; /* длительность анимации в 1 секунду */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animated-element {
+  position: absolute;
+  animation: move-around 5s linear infinite; /* Бесконечная анимация */
+}
+
+@keyframes move-around {
+  0%, 100% {
+    transform: translate(0, 0); /* начальная и конечная позиция (нет движения) */
+  }
+  25% {
+    transform: translate(2%, 0); /* движение вправо */
+  }
+  50% {
+    transform: translate(5px, 5px); /* движение вправо и вниз */
+  }
+  75% {
+    transform: translate(0, 5px); /* движение влево */
   }
 }
 
