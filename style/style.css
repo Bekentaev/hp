@@ -132,16 +132,4 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  .wrapper {
-    width: 50%;
-  }
-  .adress {
-    width: 390px;
-  }
-  .addd {
-    width: 30%;
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
