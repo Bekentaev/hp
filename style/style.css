@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Romulc";
   src: url("https://static.tildacdn.com/tild3336-6234-4233-b766-373937313632/Aquarelle.woff") format("woff");
@@ -46,6 +47,12 @@
   font-weight: 900;
   font-style: normal;
 }
+.header {
+  background-color: #704134;
+  height: 60px;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -58,13 +65,6 @@ body {
   position: relative;
   max-width: 100%;
   margin: 0 auto;
-}
-.wrapper .imgbg {
-  position: absolute;
-  background-image: url("img/img.png");
-  background-attachment: scroll;
-  width: 400px;
-  height: 400px;
 }
 .wrapper .adress {
   margin: 0 auto;
@@ -87,14 +87,19 @@ p {
 
 .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .menu li {
   list-style-type: none;
+  margin: 0;
+  padding: 10px 5px 0 10px;
+  display: flex;
 }
 .menu li a {
-  font-size: 25px;
+  font-size: 1.5em;
   color: #ff8562;
   text-decoration: none;
 }
@@ -104,35 +109,39 @@ p {
 
 .main {
   text-align: center;
+  margin-top: 80px;
 }
-
-.img {
-  top: 0;
-  opacity: 0.8;
-  width: 400px;
-  position: absolute;
-  right: -200px;
-  z-index: -1;
-  height: 400px;
-  z-index: -1;
-}
-
-.left {
-  top: 0;
-  opacity: 0.8;
-  width: 400px;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  height: 400px;
-  left: -200px;
-  transform: rotate(0.4turn);
+.main section {
+  margin: 100px 0;
 }
 
 .footer {
   background-color: black;
   color: white;
   text-align: center;
+}
+
+.section__main {
+  width: 100%;
+}
+.section__main .logo {
+  width: 390px;
+  margin: 0 auto;
+}
+.section__main .logo .logo__years {
+  position: relative;
+}
+.section__main .logo .logo__years .years {
+  position: absolute;
+  left: 170px;
+  top: 0;
+  font-size: 80px;
+}
+.section__main .logo .logo__years .y__txt {
+  top: 90px;
+}
+.section__main .logo .logo__years .img__logo {
+  width: 100%;
 }
 
 @media screen and (max-width: 390px) {
@@ -143,6 +152,38 @@ p {
 @media screen and (min-width: 300px) {
   .wrapper {
     width: 100%;
+  }
+}
+@media (max-width: 445px) {
+  .section__main .logo {
+    width: 100%;
+    max-width: 300px; /* Уменьшите максимальную ширину по вашему усмотрению */
+  }
+  .section__main .logo .logo__years .years {
+    left: 150px;
+    font-size: 60px; /* Уменьшите размер шрифта по вашему усмотрению */
+  }
+  .section__main .logo .logo__years .y__txt {
+    top: 60px; /* Уменьшите значение top по вашему усмотрению */
+  }
+  .section__main .logo .logo__years .img__logo {
+    max-width: 100%; /* Сделайте изображение адаптивным по ширине */
+  }
+}
+@media (max-width: 390px) {
+  .section__main .logo {
+    width: 100%;
+    max-width: 250px; /* Уменьшите максимальную ширину по вашему усмотрению */
+  }
+  .section__main .logo .logo__years .years {
+    font-size: 50px; /* Уменьшите размер шрифта по вашему усмотрению */
+    left: 120px;
+  }
+  .section__main .logo .logo__years .y__txt {
+    top: 60px; /* Уменьшите значение top по вашему усмотрению */
+  }
+  .section__main .logo .logo__years .img__logo {
+    max-width: 100%; /* Сделайте изображение адаптивным по ширине */
   }
 }
 
