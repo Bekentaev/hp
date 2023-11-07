@@ -58,10 +58,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 .wrapper {
-  border: 1px solid black;
   position: relative;
   max-width: 100%;
   margin: 0 auto;
@@ -154,15 +154,29 @@ p {
   overflow: hidden;
 }
 
-.img__right img {
-  position: absolute;
+.img1 img {
+  position: fixed;
   width: 500px;
-  transform: rotate(-0.25turn);
+  transform: rotate(0.25turn);
+  left: -150px;
+  top: 0;
+  opacity: 0.2;
   z-index: -1;
-  opacity: 0.4;
-  right: -115px;
-  overflow-y: hidden;
-  float: right;
+  overflow: hidden;
+}
+
+.img__right {
+  position: relative;
+  overflow: hidden;
+}
+.img__right img {
+  position: fixed;
+  width: 600px;
+  transform: rotate(-0.25turn);
+  right: -150px;
+  bottom: -200px;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 @media screen and (max-width: 390px) {
