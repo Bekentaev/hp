@@ -156,6 +156,28 @@ p {
         }
     }
 }
+.img1 {
+    img {
+        position: absolute;
+        width: 500px;
+        transform: rotate(0.25turn);
+        left: -200px;
+        opacity: 0.4;
+        z-index: -1;
+        overflow: hidden;
+    }
+}
+.img__right {
+    img {
+        position: absolute;
+        width: 500px;
+        transform: rotate(-0.25turn);
+        z-index: -1;
+        opacity: 0.4;
+        right: -125px;
+        overflow-y: hidden;
+    }
+}
 
 @media screen and (max-width: 390px) {
     .wrapper {
@@ -200,7 +222,6 @@ p {
             max-width: 250px; /* Уменьшите максимальную ширину по вашему усмотрению */
 
             .logo__years {
-
                 .years {
                     font-size: 50px; /* Уменьшите размер шрифта по вашему усмотрению */
                     left: 120px;
