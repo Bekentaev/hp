@@ -141,7 +141,7 @@ p {
         margin: 0 auto;
         .logo__years {
             position: relative;
-
+            top: 180px;
             .years {
                 position: absolute;
                 left: 170px;
@@ -263,7 +263,20 @@ p {
     animation-fill-mode: forwards; /* будет видимым после завершения анимации */
     animation-duration: 2s; /* длительность анимации в 1 секунду */
 }
+.name {
+    position: absolute;
+    left: 10%;
+    top: -100px;
 
+    .n_f {
+        text-align: left;
+        font-size: 3em;
+    }
+    .s {
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
