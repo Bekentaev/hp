@@ -56,206 +56,195 @@
     font-weight: 900;
     font-style: normal;
 }
-.header {
-    background-color: #704134;
-    // position: fixed;
-    height: 60px;
-    width: 100%;
-}
-
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Romulc";
+    color: #fff1a8;
+    text-shadow: 1px 1px 1px #000;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+body {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .wrapper {
     position: relative;
-    max-width: 100%;
-    margin: 0 auto;
+    overflow: hidden;
+}
 
-    .adress {
-        margin: 0 auto;
-        overflow-y: hidden;
+img {
+    width: 100px;
+}
+
+// bg image 1-location
+// bg left верх
+
+button,
+button:active,
+button:focus {
+    border: none;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background: transparent;
+}
+.btns {
+    position: fixed;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    right: 100px;
+    bottom: 100px;
+}
+
+.play {
+    bottom: 200px;
+}
+.bg_img_right {
+    width: 300px;
+    height: 500px;
+    position: fixed;
+    left: -20px;
+    top: -50px;
+    background-image: url(/hp/img/img10.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    // transform: scaleX(-1);
+
+    opacity: 0.5;
+}
+
+// по кругу розы
+.flower_container {
+    width: 100%;
+    height: 300px;
+
+    .flowers {
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .f1 {
+        width: 300px;
+        transform: rotate(120deg);
+        top: -80px;
+        left: -70px;
+    }
+
+    .f2 {
+        width: 300px;
+        left: 200px;
+
+        transform: rotate(220deg);
+
+        top: -150px;
+    }
+
+    .f3 {
+        right: 0;
+        transform: rotate(180deg);
+        width: 250px;
+        top: -80px;
+    }
+
+    .r1 {
+        transform: rotate(90deg);
+        width: 250px;
+        top: 400px;
+        left: -90px;
     }
 }
-h1,
-h2 {
-    font-family: "Romulc";
-    color: #ff8562;
-    margin: 20xp 0;
-    line-height: 1.5;
-}
-p {
-    font-family: "Times New Roman", Times, serif;
-    color: #ff8562;
-    margin: 20px 0;
+
+//  logo
+
+.logo {
+    margin: 0 auto;
+
+    .name {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .nf {
+            transform: rotate(10deg);
+            font-weight: 800;
+            font-size: 90px;
+        }
+        .ns {
+            transform: rotate(10deg);
+            font-weight: 800;
+            font-size: 90px;
+        }
+    }
+    .logo__years {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .years {
+            position: absolute;
+        }
+        .logo__img {
+            width: 400px;
+        }
+        .title {
+            font-size: 90px;
+            font-weight: 700;
+        }
+        .ty1 {
+            left: 45%;
+            top: 25%;
+        }
+        .ty2 {
+            left: 45%;
+            bottom: 25%;
+        }
+    }
 }
 
-.main {
+.section__welcome {
     text-align: center;
+    .title {
+        margin: 20px;
+        padding: 20px;
+    }
+    .text {
+        padding: 10px;
+    }
+}
 
-    section {
-        margin: 130px 0;
+.program {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    .h1 {
+        text-transform: uppercase;
+    }
+    .h2 {
+        font-weight: 800;
+        font-size: 80px;
     }
 }
 
 .footer {
+    height: 120px;
+    margin: 50px 0 0 0;
     background-color: black;
     color: white;
-    text-align: center;
 }
-// logo
-.section__main {
-    width: 100%;
-
-    .logo {
-        width: 390px;
-        margin: 0 auto;
-
-        .logo__years {
-            position: relative;
-            top: 180px;
-            .years {
-                position: absolute;
-                left: 170px;
-                top: 0;
-                font-size: 80px;
-            }
-            .y__txt {
-                top: 90px;
-            }
-
-            .img__logo {
-                width: 100%;
-            }
-        }
-    }
-}
-
-.name {
-    position: relative;
-    margin: 0 auto;
-    transform: rotate(45deg);
-    .n_f {
-        position: absolute;
-        font-size: 3em;
-        transform: rotate(10deg);
-    }
-    .s {
-        top: 90px;
-        position: absolute;
-        font-size: 2.5em;
-        left: 40px;
-        transform: rotate(10deg);
-    }
-}
-
-.img1 {
-    img {
-        position: fixed;
-        width: 500px;
-        transform: rotate(0.25turn);
-        left: -150px;
-        top: 0;
-        opacity: 0.2;
-        z-index: -1;
-        overflow: hidden;
-    }
-}
-
-.img__right {
-    position: relative;
-    overflow: hidden;
-    img {
-        position: fixed;
-        width: 600px;
-        transform: rotate(-0.25turn);
-        right: -150px;
-        bottom: -200px;
-        opacity: 0.2;
-        z-index: -1;
-    }
-}
-
-.flowers {
-    position: absolute;
-    width: 200px;
-    display: block;
-}
-
-.right__img__logo {
-    top: -200px;
-    transform: rotate(220deg);
-    right: 0;
-}
-
-.left__img__logo {
-    left: -100px;
-    top: 450px;
-    transform: rotate(40deg);
-}
-@media screen and (max-width: 390px) {
-    .wrapper {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 300px) {
-    .wrapper {
-        width: 100%;
-    }
-}
-
-@media (max-width: 445px) {
-    .section__main {
-        .logo {
-            width: 100%;
-            max-width: 300px; /* Уменьшите максимальную ширину по вашему усмотрению */
-
-            .logo__years {
-                .years {
-                    left: 150px;
-                    font-size: 60px; /* Уменьшите размер шрифта по вашему усмотрению */
-                }
-
-                .y__txt {
-                    top: 60px; /* Уменьшите значение top по вашему усмотрению */
-                }
-
-                .img__logo {
-                    max-width: 100%; /* Сделайте изображение адаптивным по ширине */
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 390px) {
-    .section__main {
-        .logo {
-            width: 100%;
-            max-width: 250px; /* Уменьшите максимальную ширину по вашему усмотрению */
-
-            .logo__years {
-                .years {
-                    font-size: 50px; /* Уменьшите размер шрифта по вашему усмотрению */
-                    left: 120px;
-                }
-
-                .y__txt {
-                    top: 60px; /* Уменьшите значение top по вашему усмотрению */
-                }
-
-                .img__logo {
-                    max-width: 100%; /* Сделайте изображение адаптивным по ширине */
-                }
-            }
-        }
-    }
-}
+// Animation
 
 .fade-in {
     opacity: 0; /* начальное значение непрозрачности */

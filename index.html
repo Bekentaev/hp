@@ -9,50 +9,99 @@
   <body>
     <div class="wrapper">
       <main class="main">
-        <div class="img1">
-          <img src="img/img2.png" alt="" />
+        <audio id="audio" src="1.mp3"></audio>
+        <button id="pause" class="btns">
+          <svg
+            width="100px"
+            height="100px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M8 5V19M16 5V19"
+                stroke="#bfa8ff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </button>
+        <button id="play" class="btns play">
+          <svg
+            fill="#bfa8ff"
+            height="100px"
+            width="100px"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 60.00 60.00"
+            xml:space="preserve"
+            stroke="#bfa8ff"
+            stroke-width="0.0006000000000000001"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30 c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15 C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"
+                ></path>
+                <path
+                  d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30 S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </button>
+        <div class="bg_img_right"></div>
+        <div class="flower_container">
+          <img src="img/img5.png" class="f1 flowers" alt="" />
+          <img src="img/img5.png" class="f2 flowers" alt="" />
+          <img src="img/img5.png" class="f3 flowers" alt="" />
+          <img src="img/img6.png" class="r1 flowers" alt="" />
         </div>
-
-        <section class="section__main" id="section__main">
-          <div class="logo">
-            <img src="img/img5.png" class="right__img__logo flowers" alt="" />
-            <div class="name animated-element">
-              <h2 class="n_f">Айнур</h2>
-              <h2 class="s">Рамазановна</h2>
-            </div>
-            <div class="logo__years animated-element">
-              <h2 class="years fade-in">50</h2>
-              <h2 class="years y__txt fade-in">ЖАС</h2>
-              <img src="img/logo.png" alt="" class="img__logo fade-in" />
-            </div>
-            <img src="img/img6.png" class="left__img__logo flowers" alt="" />
+        <div class="logo">
+          <div class="name">
+            <h2 class="nf title">Айнур</h2>
+            <h2 class="ns title">Рамазановна</h2>
           </div>
-        </section>
-
-        <div class="img__right">
-          <img src="img/img2.png" alt="" />
+          <div class="logo__years">
+            <h2 class="years title ty1">50</h2>
+            <h2 class="years title ty2">ЖАС</h2>
+            <img src="img/logo.png" alt="" class="logo__img" />
+          </div>
         </div>
-
-        <section class="section__second" id="section__second">
+        <section class="section__welcome" id="section__second">
           <h1 class="title">
             Құрметті ағайын-туыс, бауырлар, құда-жекжат, дос-жаран, әріптестер,
             көршілер!
           </h1>
-          <p class="text">
+          <h1 class="title">
             Сіздерді аяулы анамыздың 50 жас мерейтойына арналған ақ
             дастарханымыздың қадірлі қонағы болуға шақырамыз!
-          </p>
-        </section>
-
-        <section class="content" id="content">
-          <p class="text">Той салтанаты</p>
+          </h1>
+          <p class="text">Той салтанаты:</p>
           <h2 class="title">17 желтоқсан</h2>
-          <p class="text">сағат 19:00де басталады</p>
-          <p>
+          <p class="text">сағат 19:00-де басталады.</p>
+          <p class="text">
             Өтетін орны: Дариян ауылы Л.Толстого көшесі,15А “Тенгри” банкет залы
           </p>
 
-          <div class="adress">
+          <div class="address">
             <a
               class="dg-widget-link"
               href="http://2gis.kz/uralsk/firm/70000001056626172/center/51.748691,51.360623/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
@@ -84,13 +133,14 @@
         </section>
 
         <section class="program" id="program">
-          <h2>той иелері</h2>
-          <h2>Бауржан&Айнур</h2>
-          <h2>Келіңіздер!</h2>
-          <h2>Қуанышымызды бірге бөлісейік!</h2>
+          <h2 class="title h1">той иелері</h2>
+          <h2 class="title h2">Бауржан&Айнур</h2>
+          <h2 class="title">Келіңіздер!</h2>
+          <h2 class="title">Қуанышымызды бірге бөлісейік!</h2>
         </section>
       </main>
       <footer class="footer">created Abylay</footer>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
