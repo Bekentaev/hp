@@ -94,34 +94,8 @@ p {
     margin: 20px 0;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 0;
-    padding: 0;
-
-    li {
-        list-style-type: none;
-        margin: 0;
-        padding: 10px 5px 0 10px;
-        display: flex;
-
-        a {
-            font-size: 1.5em;
-            color: #ff8562;
-            text-decoration: none;
-        }
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-}
 .main {
     text-align: center;
-    margin-top: 80px;
 
     section {
         margin: 130px 0;
@@ -136,9 +110,11 @@ p {
 // logo
 .section__main {
     width: 100%;
+
     .logo {
         width: 390px;
         margin: 0 auto;
+
         .logo__years {
             position: relative;
             top: 180px;
@@ -159,17 +135,24 @@ p {
     }
 }
 
-.img1 {
-    img {
+.name {
+    position: relative;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    .n_f {
         position: absolute;
-        width: 500px;
-        transform: rotate(0.25turn);
-        left: -200px;
-        opacity: 0.4;
-        z-index: -1;
-        overflow: hidden;
+        font-size: 3em;
+        transform: rotate(10deg);
+    }
+    .s {
+        top: 90px;
+        position: absolute;
+        font-size: 2.5em;
+        left: 40px;
+        transform: rotate(10deg);
     }
 }
+
 .img1 {
     img {
         position: fixed;
@@ -197,6 +180,23 @@ p {
     }
 }
 
+.flowers {
+    position: absolute;
+    width: 200px;
+    display: block;
+}
+
+.right__img__logo {
+    top: -200px;
+    transform: rotate(220deg);
+    right: 0;
+}
+
+.left__img__logo {
+    left: -100px;
+    top: 450px;
+    transform: rotate(40deg);
+}
 @media screen and (max-width: 390px) {
     .wrapper {
         width: 100%;
@@ -263,20 +263,7 @@ p {
     animation-fill-mode: forwards; /* будет видимым после завершения анимации */
     animation-duration: 2s; /* длительность анимации в 1 секунду */
 }
-.name {
-    position: absolute;
-    left: 10%;
-    top: -100px;
 
-    .n_f {
-        text-align: left;
-        font-size: 3em;
-    }
-    .s {
-        font-size: 2.5em;
-        text-align: center;
-    }
-}
 @keyframes fadeIn {
     0% {
         opacity: 0;
