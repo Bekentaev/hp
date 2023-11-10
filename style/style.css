@@ -63,6 +63,9 @@ h3 {
 
 p {
   font-family: "Times New Roman", Times, serif;
+  color: #fff1a8;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 24px;
 }
 
 body {
@@ -91,14 +94,23 @@ button:focus {
 .btns {
   position: fixed;
   z-index: 2;
-  width: 25px;
-  height: 25px;
-  right: 100px;
-  bottom: 100px;
+  width: 50px;
+  height: 50px;
+  right: 30px;
+  bottom: 50px;
+}
+.btns svg {
+  background-color: lightblue;
+  width: 50px;
+  border-radius: 100px;
 }
 
-.play {
-  bottom: 200px;
+.btns.disabled {
+  display: none;
+}
+
+button:active svg {
+  background-color: black;
 }
 
 .bg_img_right {
@@ -111,6 +123,20 @@ button:focus {
   background-size: 300px;
   background-repeat: no-repeat;
   z-index: -1;
+  opacity: 0.5;
+}
+
+.bg_img_left {
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  right: -20px;
+  bottom: -50px;
+  background-image: url(/hp/img/img10.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: scaleX(-1);
   opacity: 0.5;
 }
 
@@ -160,7 +186,7 @@ button:focus {
 .logo .name .nf {
   transform: rotate(10deg);
   font-weight: 800;
-  font-size: 90px;
+  font-size: 5em;
 }
 .logo .name .ns {
   transform: rotate(10deg);
@@ -255,6 +281,129 @@ button:focus {
   }
   75% {
     transform: translate(0, 5px); /* движение влево */
+  }
+}
+@keyframes zoom-in-outf1 {
+  0% {
+    transform: scale(1); /* Initial scale is 1, which means normal size */
+    transform: rotate(85deg);
+  }
+  50% {
+    transform: scale(1.5); /* Zoom in to 110% of the original size */
+    transform: rotate(88deg);
+  }
+  100% {
+    transform: scale(1); /* Return to the normal size */
+    transform: rotate(85deg);
+  }
+}
+/* Apply the zoom-in-out animation to elements with the class 'zoom-element' */
+.zoom-elementf1 {
+  animation: zoom-in-outf1 5s ease-in-out infinite; /* Use the defined keyframe animation */
+}
+
+@keyframes zoom-in-outf2 {
+  0% {
+    transform: scale(1);
+    transform: rotate(220deg);
+  }
+  50% {
+    transform: scale(1.2);
+    transform: rotate(222deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(220deg);
+  }
+}
+.zoom-elementf2 {
+  animation: zoom-in-outf2 6s ease-in-out infinite;
+}
+
+@keyframes zoom-in-outf3 {
+  0% {
+    transform: scale(1);
+    transform: rotate(-180deg);
+  }
+  50% {
+    transform: scale(1.2);
+    transform: rotate(-183deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(-180deg);
+  }
+}
+.zoom-elementf3 {
+  animation: zoom-in-outf3 10s ease-in-out infinite;
+}
+
+@media screen and (max-width: 650px) {
+  .logo .name .nf {
+    font-size: 65px;
+  }
+  .logo .name .ns {
+    font-size: 65px;
+  }
+  .logo .logo__years .logo__img {
+    width: 350px;
+  }
+  .logo .logo__years .title {
+    font-size: 70px;
+  }
+  .logo .logo__years .ty1 {
+    left: 45%;
+    top: 25%;
+  }
+  .logo .logo__years .ty2 {
+    left: 45%;
+    bottom: 30%;
+  }
+  .address {
+    overflow-y: hidden;
+  }
+  .program {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .program .h1 {
+    text-transform: uppercase;
+  }
+  .program .h2 {
+    font-weight: 800;
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo .logo__years .logo__img {
+    width: 330px;
+  }
+  .logo .logo__years .title {
+    font-size: 60px;
+  }
+  .logo .logo__years .ty1 {
+    left: 45%;
+    top: 25%;
+  }
+  .logo .logo__years .ty2 {
+    left: 45%;
+    bottom: 35%;
+  }
+  .program {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .program .h1 {
+    text-transform: uppercase;
+  }
+  .program .h2 {
+    font-weight: 800;
+    font-size: 45px;
+  }
+  .btns svg {
+    width: 50px;
   }
 }
 
