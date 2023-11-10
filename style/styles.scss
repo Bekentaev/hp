@@ -66,7 +66,8 @@ h1,
 h2,
 h3 {
     font-family: "Romulc";
-    color: #dffd8d;
+    color: white;
+
     text-shadow: 1px 1px 1px #000;
 }
 
@@ -213,7 +214,7 @@ button:active {
 
         .nf {
             transform: rotate(10deg);
-            
+
             font-weight: 800;
             font-size: 5em;
         }
@@ -244,32 +245,33 @@ button:active {
                 font-size: 90px;
             }
         }
-        .logo__years {
-            position: relative;
-            margin: 0 auto;
-
-            .years {
-                // position: absolute;
-            }
-            .logo__img {
-                // width: 400px;
-            }
-            .title {
-                // font-size: 180px;
-                // font-weight: 700;
-            }
-            // .ty1 {
-            //     left: 45%;
-            //     top: 25%;
-            // }
-            // .ty2 {
-            //     left: 45%;
-            //     bottom: 25%;
-            // }
-        }
     }
 }
 
+.logo__years {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+
+    .years {
+        position: absolute;
+    }
+    .ty1 {
+        left: 220px;
+        font-size: 80px;
+        top: 110px;
+    }
+    .ty2 {
+        left: 220px;
+        font-size: 80px;
+        top: 200px;
+    }
+    .logo__img {
+        width: 350px;
+        margin: 0 auto;
+        display: block;
+    }
+}
 .section__welcome {
     text-align: center;
     .title {
@@ -451,11 +453,11 @@ button:active {
             }
             .ty1 {
                 left: 45%;
-                top: 25%;
+                top: 35%;
             }
             .ty2 {
                 left: 45%;
-                bottom: 30%;
+                bottom: 40%;
             }
         }
     }
@@ -490,11 +492,11 @@ button:active {
             }
             .ty1 {
                 left: 45%;
-                top: 25%;
+                top: 35%;
             }
             .ty2 {
                 left: 45%;
-                bottom: 35%;
+                bottom: 45%;
             }
         }
     }
@@ -515,6 +517,27 @@ button:active {
     .btns {
         svg {
             width: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo {
+        .logo__years {
+            .logo__img {
+                width: 330px;
+            }
+            .title {
+                font-size: 60px;
+            }
+            .ty1 {
+                left: 45%;
+                top: 35%;
+            }
+            .ty2 {
+                left: 45%;
+                bottom: 300px;
+            }
         }
     }
 }

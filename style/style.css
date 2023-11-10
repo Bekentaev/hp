@@ -57,7 +57,7 @@ h1,
 h2,
 h3 {
   font-family: "Romulc";
-  color: #dffd8d;
+  color: white;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -214,10 +214,31 @@ button:active svg {
   font-weight: 800;
   font-size: 90px;
 }
-.logo .logo .logo__years {
-  position: relative;
+
+.logo__years {
+  max-width: 500px;
   margin: 0 auto;
+  position: relative;
 }
+.logo__years .years {
+  position: absolute;
+}
+.logo__years .ty1 {
+  left: 220px;
+  font-size: 80px;
+  top: 110px;
+}
+.logo__years .ty2 {
+  left: 220px;
+  font-size: 80px;
+  top: 200px;
+}
+.logo__years .logo__img {
+  width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+
 .section__welcome {
   text-align: center;
 }
@@ -382,11 +403,11 @@ button:active svg {
   }
   .logo .logo__years .ty1 {
     left: 45%;
-    top: 25%;
+    top: 35%;
   }
   .logo .logo__years .ty2 {
     left: 45%;
-    bottom: 30%;
+    bottom: 40%;
   }
   .address {
     overflow-y: hidden;
@@ -414,11 +435,11 @@ button:active svg {
   }
   .logo .logo__years .ty1 {
     left: 45%;
-    top: 25%;
+    top: 35%;
   }
   .logo .logo__years .ty2 {
     left: 45%;
-    bottom: 35%;
+    bottom: 45%;
   }
   .program {
     margin: 50px auto;
@@ -434,6 +455,22 @@ button:active svg {
   }
   .btns svg {
     width: 50px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .logo .logo__years .logo__img {
+    width: 330px;
+  }
+  .logo .logo__years .title {
+    font-size: 60px;
+  }
+  .logo .logo__years .ty1 {
+    left: 45%;
+    top: 35%;
+  }
+  .logo .logo__years .ty2 {
+    left: 45%;
+    bottom: 300px;
   }
 }
 
