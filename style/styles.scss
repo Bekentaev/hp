@@ -66,19 +66,20 @@ h1,
 h2,
 h3 {
     font-family: "Romulc";
-    color: #fff1a8;
+    color: #dffd8d;
     text-shadow: 1px 1px 1px #000;
 }
 
 p {
     font-family: "Times New Roman", Times, serif;
-    color: #fff1a8;
+    color: #dffd8d;
     text-shadow: 1px 1px 1px #000;
     font-size: 24px;
 }
 body {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: rgb(255, 224, 230);
 }
 
 .wrapper {
@@ -212,6 +213,7 @@ button:active {
 
         .nf {
             transform: rotate(10deg);
+            
             font-weight: 800;
             font-size: 5em;
         }
@@ -221,28 +223,49 @@ button:active {
             font-size: 90px;
         }
     }
-    .logo__years {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        .years {
-            position: absolute;
+    .logo {
+        margin: 0 auto;
+
+        .name {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .nf {
+                transform: rotate(10deg);
+                font-weight: 800;
+                font-size: 5em;
+            }
+            .ns {
+                transform: rotate(10deg);
+                font-weight: 800;
+                font-size: 90px;
+            }
         }
-        .logo__img {
-            width: 400px;
-        }
-        .title {
-            font-size: 90px;
-            font-weight: 700;
-        }
-        .ty1 {
-            left: 45%;
-            top: 25%;
-        }
-        .ty2 {
-            left: 45%;
-            bottom: 25%;
+        .logo__years {
+            position: relative;
+            margin: 0 auto;
+
+            .years {
+                // position: absolute;
+            }
+            .logo__img {
+                // width: 400px;
+            }
+            .title {
+                // font-size: 180px;
+                // font-weight: 700;
+            }
+            // .ty1 {
+            //     left: 45%;
+            //     top: 25%;
+            // }
+            // .ty2 {
+            //     left: 45%;
+            //     bottom: 25%;
+            // }
         }
     }
 }
@@ -269,6 +292,18 @@ button:active {
         font-weight: 800;
         font-size: 80px;
     }
+
+    .rest {
+        max-width: 500px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 200px;
+            border-radius: 100px;
+        }
+    }
 }
 
 .footer {
@@ -277,6 +312,25 @@ button:active {
     background-color: black;
     color: white;
 }
+
+.trent {
+    transform: rotate(90deg);
+    position: absolute;
+    width: 300px;
+    left: -100px;
+    z-index: -1;
+    display: block;
+}
+
+.trent-right {
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 400px;
+    right: -100px;
+    z-index: -1;
+    display: block;
+}
+
 // Animation
 
 .fade-in {
@@ -408,6 +462,7 @@ button:active {
 
     .address {
         overflow-y: hidden;
+        margin: 50px auto;
     }
 
     .program {
