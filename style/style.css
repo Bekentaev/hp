@@ -61,7 +61,7 @@ h3 {
 
 p {
   font-family: "Times New Roman", Times, serif;
-  color: black;
+  color: #90a0ee;
   text-shadow: 5px 5px 5px green;
   font-size: 24px;
 }
@@ -186,14 +186,14 @@ button:active svg {
   transform: rotate(10deg);
   font-weight: 800;
   font-size: 5em;
-  color: rgb(233, 211, 85);
+  color: #90a0ee;
   -webkit-text-stroke: 0.5px black; /* Толщина и цвет обводки */
 }
 .logo .name .ns {
   transform: rotate(10deg);
   font-weight: 800;
   font-size: 90px;
-  color: rgb(233, 211, 85);
+  color: #90a0ee;
   -webkit-text-stroke: 0.5px black; /* Толщина и цвет обводки */
 }
 .logo .logo {
@@ -224,7 +224,7 @@ button:active svg {
 }
 .logo__years .years {
   position: absolute;
-  color: rgb(233, 211, 85);
+  color: #90a0ee;
   -webkit-text-stroke: 1px black; /* Толщина и цвет обводки */
 }
 .logo__years .ty1 {
@@ -249,12 +249,12 @@ button:active svg {
 .section__welcome .title {
   margin: 20px;
   padding: 20px;
-  color: rgb(233, 211, 85);
+  color: #90a0ee;
   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
 }
 .section__welcome .text {
   padding: 10px;
-  color: rgb(233, 211, 85);
+  color: #90a0ee;
   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
 }
 
@@ -264,22 +264,25 @@ button:active svg {
   text-align: center;
 }
 .program .title {
-  color: rgb(233, 211, 85);
+  color: #238e15;
   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}
+.program .title {
+  color: #90a0ee;
 }
 .program .h1 {
   text-transform: uppercase;
-  color: rgb(233, 211, 85);
+  color: #90a0ee;
   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
 }
 .program .h2 {
-  color: rgb(233, 211, 85);
   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
   font-weight: 800;
   font-size: 80px;
 }
 .program .rest {
   max-width: 500px;
+  height: 200px;
   margin: 50px auto;
   display: flex;
   justify-content: center;
@@ -287,9 +290,10 @@ button:active svg {
 }
 .program .rest img {
   width: 200px;
-  border-radius: 100px;
+  border-radius: 50px;
+  display: block;
+  transform: rotate(10deg);
 }
-
 .footer {
   height: 120px;
   margin: 50px 0 0 0;
