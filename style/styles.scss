@@ -66,21 +66,18 @@ h1,
 h2,
 h3 {
     font-family: "Romulc";
-    color: white;
-
-    text-shadow: 1px 1px 1px #000;
 }
 
 p {
     font-family: "Times New Roman", Times, serif;
-    color: #dffd8d;
-    text-shadow: 1px 1px 1px #000;
+    color: black;
+    text-shadow: 5px 5px 5px green;
     font-size: 24px;
 }
 body {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: rgb(255, 224, 230);
+    background: linear-gradient(90deg, rgba(255, 224, 230, 0.7) 52%, rgba(0, 212, 255, 0.3) 100%);
 }
 
 .wrapper {
@@ -217,11 +214,21 @@ button:active {
 
             font-weight: 800;
             font-size: 5em;
+            color: rgb(233, 211, 85);
+
+            // color: #000000; /* Цвет текста */
+            -webkit-text-stroke: 0.5px black; /* Толщина и цвет обводки */
+            // text-stroke: 1px #ffffff;
         }
         .ns {
             transform: rotate(10deg);
             font-weight: 800;
             font-size: 90px;
+            color: rgb(233, 211, 85);
+
+            // color: #000000; /* Цвет текста */
+            -webkit-text-stroke: 0.5px black; /* Толщина и цвет обводки */
+            // text-stroke: 1px #ffffff;
         }
     }
     .logo {
@@ -255,6 +262,11 @@ button:active {
 
     .years {
         position: absolute;
+        color: rgb(233, 211, 85);
+
+        // color: #000000; /* Цвет текста */
+        -webkit-text-stroke: 1px black; /* Толщина и цвет обводки */
+        // text-stroke: 1px #ffffff;
     }
     .ty1 {
         left: 220px;
@@ -277,9 +289,23 @@ button:active {
     .title {
         margin: 20px;
         padding: 20px;
+        color: rgb(233, 211, 85);
+
+        text-shadow:
+            1px 0 1px #000,
+            0 1px 1px #000,
+            -1px 0 1px #000,
+            0 -1px 1px #000;
     }
     .text {
         padding: 10px;
+        color: rgb(233, 211, 85);
+
+        text-shadow:
+            1px 0 1px #000,
+            0 1px 1px #000,
+            -1px 0 1px #000,
+            0 -1px 1px #000;
     }
 }
 
@@ -287,10 +313,30 @@ button:active {
     margin: 50px auto;
     padding: 20px;
     text-align: center;
+    .title {
+        color: rgb(233, 211, 85);
+        text-shadow:
+            1px 0 1px #000,
+            0 1px 1px #000,
+            -1px 0 1px #000,
+            0 -1px 1px #000;
+    }
     .h1 {
         text-transform: uppercase;
+        color: rgb(233, 211, 85);
+        text-shadow:
+            1px 0 1px #000,
+            0 1px 1px #000,
+            -1px 0 1px #000,
+            0 -1px 1px #000;
     }
     .h2 {
+        color: rgb(233, 211, 85);
+        text-shadow:
+            1px 0 1px #000,
+            0 1px 1px #000,
+            -1px 0 1px #000,
+            0 -1px 1px #000;
         font-weight: 800;
         font-size: 80px;
     }
@@ -352,8 +398,8 @@ button:active {
 }
 
 .animated-element {
-    position: absolute;
-    animation: move-around 5s linear infinite; /* Бесконечная анимация */
+    // position: absolute;
+    animation: move-around 7s linear infinite; /* Бесконечная анимация */
 }
 
 @keyframes move-around {
@@ -428,6 +474,45 @@ button:active {
 
 .zoom-elementf3 {
     animation: zoom-in-outf3 10s ease-in-out infinite;
+}
+
+@keyframes zoom-in-outf4 {
+    0% {
+        transform: scale(1);
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: scale(1.2);
+        transform: rotate(93deg);
+    }
+    100% {
+        transform: scale(1);
+        transform: rotate(90deg);
+    }
+}
+
+.zoom-elementf4 {
+    animation: zoom-in-outf4 5s ease-in-out infinite;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1); /* Initial scale is 1, which means normal size */
+        // transform: rotate(85deg);
+    }
+    50% {
+        transform: scale(1.1); /* Zoom in to 110% of the original size */
+        // transform: rotate(88deg);
+    }
+    100% {
+        transform: scale(1); /* Return to the normal size */
+        // transform: rotate(85deg);
+    }
+}
+
+/* Apply the zoom-in-out animation to elements with the class 'zoom-element' */
+.zoom-element {
+    animation: zoom-in-out 8s ease-in-out infinite; /* Use the defined keyframe animation */
 }
 
 // Адаптив
