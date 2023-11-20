@@ -2,10 +2,7 @@ const audio = document.getElementById("audio");
 const playB = document.getElementById("play");
 const pauseB = document.getElementById("pause");
 
-document.addEventListener('DOMContentLoaded', function () {
-    audio.src = "1.mp3";
-    audio.play();
-});
+
 
 const playAudio = () => {
     audio.play();
@@ -22,6 +19,10 @@ const pauseAudio = () => {
 playB.addEventListener('click', playAudio);
 pauseB.addEventListener('click', pauseAudio);
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    audio.play();
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     const scrollDuration = 20000; // Время в миллисекундах (10 секунд)
